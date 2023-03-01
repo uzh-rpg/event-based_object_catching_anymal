@@ -9,19 +9,19 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: "AEGNN: Asynchronous Event-based Graph Neural Networks"
+title: "Event-based Agile Object Catching with a Quadrupedal Robot"
 # 
 email: dgehrig@ifi.uzh.ch 
 name: Robotics and Perception Group 
 description: >
-    "AEGNN: Asynchronous Event-based Graph Neural Networks"
+    "Event-based Agile Object Catching with a Quadrupedal Robot"
 
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
-baseurl: "/aegnn" # the subpath of your site, e.g. /blog/
+baseurl: "/event-based_object_catching_anymal" # the subpath of your site, e.g. /blog/
 url: "https://uzh-rpg.github.io" # the base hostname & protocol for your site
-cover: "/assets/thumbnail.gif"
+cover: "/assets/thumbnail.png"
 logo: "/assets/logo.png"
 
 # Build settings
