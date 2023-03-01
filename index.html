@@ -19,39 +19,36 @@ enabled: true
   </div>
   <br>
   <div class="wrapper">
-    <h1 id="headings">Code, Video and Paper</h1>
+    <h1 id="headings">Paper</h1>
     <p align="center">
+      <!--
       <a href="https://youtu.be/opbFE6OsAeA">
         <img src="assets/thumbnail_yt.png" alt="AEGNN" width="500"/>
-      </a>
+      </a>-->
       <a href="https://rpg.ifi.uzh.ch/docs/CVPR22_Schaefer.pdf">[PDF]</a> 
-      <a href="https://youtu.be/opbFE6OsAeA">[YouTube]</a> 
-      <a href="https://github.com/uzh-rpg/aegnn/">[Code]</a> 
+            <!--<a href="https://youtu.be/opbFE6OsAeA">[YouTube]</a> 
+      <a href="https://github.com/uzh-rpg/aegnn/">[Code]</a> -->
     </p>
-
+    Event-based Agile Object Catching with a Quadrupedal Robot
     <h1 id="headings">Introduction</h1>
     <p style="text-align: justify">
-      The best performing learning algorithms devised for
-      event cameras work by first converting events into dense
-      representations that are then processed using standard
-      CNNs. However, these steps discard both the sparsity and
-      high temporal resolution of events, leading to high computational burden and latency. For this reason, recent works
-      have adopted Graph Neural Networks (GNNs), which process events as “static” spatio-temporal graphs, which are
-      inherently ”sparse”. We take this trend one step further by
-      introducing Asynchronous, Event-based Graph Neural Networks (AEGNNs), a novel event-processing paradigm that
-      generalizes standard GNNs to process events as “evolving”
-      spatio-temporal graphs. AEGNNs follow efficient update
-      rules that restrict recomputation of network activations only
-      to the nodes affected by each new event, thereby significantly reducing both computation and latency for event-
-      by-event processing. AEGNNs are easily trained on synchronous inputs and can be converted to efficient, ”asynchronous” networks at test time. We thoroughly validate
-      our method on object classification and detection tasks,
-      where we show an up to a 200-fold reduction in computational complexity (FLOPs), with similar or even better
-      performance than state-of-the-art asynchronous methods.
-      This reduction in computation directly translates to an 8-fold reduction in computational latency when compared to
-      standard GNNs, which opens the door to low-latency event-
-      based processing.
+      Quadrupedal robots are conquering various applications in indoor and outdoor 
+      environments due to their capability to navigate challenging uneven terrains.
+      Exteroceptive information greatly enhances this capability since perceiving their 
+      surroundings allows them to adapt their controller and thus achieve higher levels 
+      of robustness. However, sensors such as LiDARs and RGB cameras do not provide sufficient 
+      information to quickly and precisely react in a highly dynamic environment since 
+      they suffer from a bandwidth-latency tradeoff. They require significant bandwidth 
+      at high frame rates while featuring significant perceptual latency at lower frame rates, 
+      thereby limiting their versatility on resource constrained platforms. In this work, 
+      we tackle this problem by equipping our quadruped with an event camera, which 
+      does not suffer from this tradeoff due to its asynchronous and sparse operation. 
+      In levering the low latency of the events, we push the limits of quadruped agility 
+      and demonstrating high-speed ball catching with a net for the first time. We show 
+      that our quadruped equipped with an event-camera can catch objects at maximum speeds 
+      of 15 m/s from 4 meters, with a success rate of 83%. With a VGA event camera, our method 
+      runs at 100 Hz on an NVIDIA Jetson Orin. 
     </p>
-
 
 
     <div class="container" style="margin-top:30px;margin-bottom:30px;">
@@ -59,17 +56,17 @@ enabled: true
       If you use this code in a publication, please cite our paper.
 
     </p>
-      S. Schaefer*, D. Gehrig* and D. Scaramuzza, <b>"AEGNN: Asynchronous Event-based Graph Neural Networks" </b>,
-      IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2022. 
+      B. Forrai*, T. Miki*, D. Gehrig, M. Hutter and D. Scaramuzza, <b>"Event-based Agile Object Catching with a Quadrupedal Robot" </b>,
+      IEEE International Conference on Robotics and Automation (ICRA), 2023. 
       <br>
     </p>
 <pre>
 <code class="pre-scrollable" style="background:#ffffff;color:rgb(36, 21, 21);font-size:12px;padding:0px;border-width:0px;">
-@article{Schaefer21cvpr,
-  title={AEGNN: Asynchronous Event-based Graph Neural Networks},
-  author={Schaefer, Simon and Gehrig, Daniel and Scaramuzza, Davide},
-  journal={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year={2022}
+@article{Forrai21icra,
+  title={Event-based Agile Object Catching with a Quadrupedal Robot},
+  author={Forrai, Benedek and Miki, Takahiro and Gehrig, Daniel and Hutter, Marco and Scaramuzza, Davide},
+  journal={IEEE International Conference on Robotics and Automation (ICRA)},
+  year={2023}
 }
 </code>
 </pre>
@@ -78,11 +75,11 @@ enabled: true
 
     <h2 id="headings">People</h2> 
 <div id="people">
-  <div class="inline-block">
+  <!--<div class="inline-block">
     <a href="https://simon-schaefer.github.io/">
     <img class="circular--square" src="{{site.baseurl}}/assets/people/simon.jpg" style="width: 200px">
     <p style="text-align:center"><strong>Simon Schaefer</strong></p>
-    </a>
+    </a>-->
   </div>
   <div class="inline-block">
     <a href="https://danielgehrig18.github.io/">
