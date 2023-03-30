@@ -1,4 +1,4 @@
-# Dynamic Obstacle Tracking
+# Event-based Agile Object Catching with a Quadrupedal Robot
 
 <p align="center">
   <a href="https://youtu.be/FpsVB8EO54M">
@@ -73,13 +73,13 @@ ln -s ~/git/gflags_catkin $catkin_workspace/src/.
 ln -s ~/git/glog_catkin $catkin_workspace/src/.
 ```
 
-### Clone recursively
-Clone the repo *recursively with submodules* (TODO: switch to final repo on the github of RPG)
+### Clone
+Clone the repo
 
 ```bash
 mkdir -p ~/git
 cd ~/git
-git clone git@github.com:fbenedek/rpg_dynamic_obstacle_detection.git --recursive
+git clone git@github.com:fbenedek/rpg_dynamic_obstacle_detection.git
 ```
 Symlink it to your ROS workspace similarly to the dependencies (change the first line according to your workspace path):
 ```bash
