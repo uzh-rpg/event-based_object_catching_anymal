@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="tf" type="static_transform_publisher" name="tf_map" args="0 0 0 0 0 0 1 world map 100"/>
+    <node pkg="tf" type="static_transform_publisher" name="tf_odom" args="0 0 0 0 0 0 1 world odom 100"/>
+    <node pkg="tf" type="static_transform_publisher" name="tf_cam" args="0 0 0 0 0 0 1 world cam_frame 100"/>
+
+    <node type="rviz" name="rviz" pkg="rviz" args="-d $(find rpg_ransac_parabola)/rviz/ransac_visualization.rviz" />
+</launch>

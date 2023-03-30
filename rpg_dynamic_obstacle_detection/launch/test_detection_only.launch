@@ -1,0 +1,10 @@
+<launch>
+  <group ns="sees">
+    <node pkg="rpg_dynamic_obstacle_detection" type="dynamic_obstacle_detection" name="dynamic_obstalce_detection" output="screen">
+      <rosparam file="$(find rpg_dynamic_obstacle_detection)/parameters/parameters.yaml" />
+      <param name="calib_file" value="$(find rpg_dynamic_obstacle_detection)/../calibration/calib_sees.yaml" />
+      <remap from="/sees/events" to="/dvs/events" />
+      <remap from="/sees/imu" to="/dvs/imu" />
+    </node>
+  </group>
+</launch>

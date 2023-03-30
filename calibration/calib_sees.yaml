@@ -1,0 +1,20 @@
+image_width: 640
+image_height: 480
+camera_name: DVXPLORER
+camera_matrix:
+ rows: 3
+ cols: 3 
+ data: [593.4117, 0.0, 317.6358, 0.0, 593.0691, 228.0669, 0.0, 0.0, 1.0]
+distortion_model: plumb_bob
+distortion_coefficients:
+ rows: 1
+ cols: 5
+ data: [-0.4566,0.5762,-0.0022,-0.0015,0.0]
+rectification_matrix:
+ rows: 3
+ cols: 3
+ data: [1.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 1.000000]
+projection_matrix:
+ rows: 3
+ cols: 4
+ data: [593.4117, 0.0, 317.6358, 0.0, 0.0, 593.0691, 228, 0.0, 0.0, 0.0, 1.0, 0.0]

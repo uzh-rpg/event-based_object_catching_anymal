@@ -1,0 +1,73 @@
+# dynamic_obstacle_detection
+update_frequency: 200
+update_frequency_velocity: 55
+rectangle_ratio_limit: 1.75
+use_optimized_camera_matrix: false
+
+marker_lifetime: 1.0
+marker_decay_factor: 1.0
+visualization_update_frequency: 100
+
+camera:
+# TODO: convert these to robot base CS (if needed ...)
+  offset: [0.0, 0.0, 0.0] 
+  rotation: [0.0, 0.0, 0.0, 1.0]
+  matrix: [592.9264, 0.0, 312.6777, 0.0, 592.4369, 229.7782, 0.0, 0.0, 1.0]
+
+# dvs_handler
+dvs_handler:
+  min_num_events_per_frame: 10
+  frame_size: 35
+  min_step_size: 1
+  event_history_size: 5000000
+
+# normalized_mean_timestamp_image
+normalized_mean_timestamp_image:
+  thresh_a: 0.5
+  thresh_b: 0.2
+
+# timestamp_image_filter
+timestamp_image_filter:
+  # Gaussian filter applied on the unthresholded image 
+  raw_image_filter: 1
+  morphology_kernel_size_open: 3
+  morphology_kernel_size_close: 4
+  opening_iterations: 1
+  closing_iterations: 1
+  morphology_kernel_size_dilate: 2
+  dilate_iterations: 0
+
+# optical_flow
+optical_flow:
+  window_width: 25
+  inc_std: 2.5 # 97.5% of the image points
+  median_filter_width: 0
+  mean_input_filter_width: 15
+  mean_output_filter_width: 15
+
+# dbscan
+dbscan:
+  eps: 16.0
+  weights:
+    pos: 0.20
+    vel: 0.2
+    timestamp: 0.8
+  use_rotated_rect: true
+
+# backprojection
+backprojection:
+  width_real: 0.11
+  depth_uncertanty: 0.25
+  depth_object: 0.11
+  depth_limit: 10.0
+  tolerance: 0.001
+  use_min_or_max_side: -1
+
+checkBox:
+  x_min: -0.4
+  y_min: -1.8
+  z_min: 0.5
+  x_max: 1.8
+  y_max: 1.8
+  z_max: 1.4
+  check_time: 0.10
