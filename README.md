@@ -8,9 +8,10 @@
 
 This repository contains code that implements dynamic obstacle tracking with a DVS sensor, as described in Forrai et. al ICRA '23 (see paper [here](https://rpg.ifi.uzh.ch/docs/ICRA23_Forrai.pdf)) and Falanga et. al SciRob '20 (see paper [here](https://www.science.org/doi/10.1126/scirobotics.aaz9712)).
 
+## Citation
 If you use this code in an academic context, please cite the following works:
 
-Benedek Forrai*, [Takahiro Miki*](https://mktk1117.github.io/), [Daniel Gehrig*](https://danielgehrig18.github.io/), [Marco Hutter](https://mavt.ethz.ch/people/person-detail.hutter.html), [Davide Scaramuzza](http://rpg.ifi.uzh.ch/people_scaramuzza.html), "Event-based Agile Object Catching with a Quadrupedal Robot", ICRA, 2023
+Benedek Forrai*, [Takahiro Miki*](https://mktk1117.github.io/), [Daniel Gehrig*](https://danielgehrig18.github.io/), [Marco Hutter](https://mavt.ethz.ch/people/person-detail.hutter.html), [Davide Scaramuzza](http://rpg.ifi.uzh.ch/people_scaramuzza.html), "Event-based Agile Object Catching with a Quadrupedal Robot", ICRA, 2023. [PDF](https://rpg.ifi.uzh.ch/docs/ICRA23_Forrai.pdf)
 (* denotes equal contribution)
 
 ```bibtex
